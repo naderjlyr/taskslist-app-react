@@ -1,0 +1,29 @@
+GET http://localhost:3001/taskslist
+
+###
+
+POST http://localhost:3001/task/new
+Content-Type:application/json
+
+{
+    "text":"Order Cheeze",
+    "complete":false
+}
+
+###
+
+DELETE http://localhost:3001/task/delete/6258480c403d076aa00e3998
+
+###
+
+PUT http://localhost:3001/task/complete/62586d8c3c5166ac6d4c85c0
+
+###
+
+PUT http://localhost:3001/task/edit/625893ad4bc049d0487c3d7b
+Content-Type:application/json
+
+{
+    "text":"sometasdhing else",
+    "complete":true
+}

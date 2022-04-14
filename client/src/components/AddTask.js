@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaEdit } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-function AddTodo(props) {
+function AddTask(props) {
   const [taskTitle, setTaskTitle] = useState("");
 
   const onSubmit = (evt) => {
@@ -15,7 +15,7 @@ function AddTodo(props) {
       return;
     }
 
-    props.addTodo(taskTitle);
+    props.addTask(taskTitle);
 
     // Clear task text in component state
     setTaskTitle("");
@@ -48,8 +48,8 @@ function AddTodo(props) {
   );
 }
 
-AddTodo.propTypes = {
-  addTodo: PropTypes.func.isRequired,
+AddTask.propTypes = {
+  addTask: PropTypes.func.isRequired,
 };
 
-export default AddTodo;
+export default AddTask;
