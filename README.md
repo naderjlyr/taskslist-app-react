@@ -39,5 +39,3 @@ The database port is MongoDB default which is 27017, and it also can be changed 
 
 It's so simple, just enter the task name and press enter or click on the icon in the text field to add your task.
 You can set the task to "completed" by checking the checkbox provided for each task in the list.
-
-**Note:** Because of there is no database storage etc, tasks will be gone on page refresh.
